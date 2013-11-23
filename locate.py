@@ -167,9 +167,10 @@ while True:
           if o  == "Y":
                  print "Proceeding"
                  print "updating the script uses gith\n\nI hope u have github setup"
-                 os.chdir(/root)
+                 os.chdir("/root")
                  print "Removing old directory"
                  os.system("rm -rf locate")
+                 os.getpwd()
                  print "Getting the updated script"
                  os.system("git clone git://github.com/Tecksupport/locate")
                  os.getcwd()
