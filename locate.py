@@ -421,7 +421,7 @@ while True:
    #  ping()
    #nslook()
 
-# Add this all to a menu so this way its all over the place
+# Add this all to a menu so this way its not all over the place
 
    try:
        f = bcolors.BOLD + "Enter First Octant: " + bcolors.ENDC
