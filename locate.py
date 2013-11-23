@@ -168,9 +168,10 @@ while True:
                  print "Proceeding"
                  print "updating the script uses gith\n\nI hope u have github setup"
                  os.chdir("/root")
+                 os.system("pwd")
                  print "Removing old directory"
                  os.system("rm -rf locate")
-                 os.getpwd()
+                 os.getcwd()
                  print "Getting the updated script"
                  os.system("git clone git://github.com/Tecksupport/locate")
                  os.getcwd()
@@ -180,7 +181,9 @@ while True:
                  os.system("chmod 777 locate.py")
                  print "Moving back dirs"
                  os.chdir("/root")
-                 print "All done"
+                 os.system("pwd")
+                 os.system("ls")
+                 print "All done Enjoy your new script!"
                  options()
 
           else:
