@@ -76,14 +76,12 @@ while True:
                     locallook()
              elif ch == "n" or ch == "N":
                       os.system("clear")
-                      print bcolors.DARKCYAN + "[+]Skipping local look up "
-+ bcolors.ENDC
+                      print bcolors.DARKCYAN + "[+]Skipping local look up " + bcolors.ENDC
                       time.sleep(0.3)
                       pass
              elif ch == "":
                       time.sleep(0.1)
-                      print bcolors.RED + "[!]You left the question blank"+
-bcolors.ENDC
+                      print bcolors.RED + "[!]You left the question blank"+ bcolors.ENDC
                       os.system("clear")
                       return local()
              elif ch == "Goto portscan":
@@ -112,18 +110,15 @@ bcolors.ENDC
             print "Well run a ping sweep first"
             time.sleep(0.2)
             os.system("ping  "+ host+ " -c 5")
-            print "[*]ping sweep complete"+'\n'+"Now port scanning" + bcolo
-rs.ENDC
+            print "[*]ping sweep complete"+'\n'+"Now port scanning" + bcolors.ENDC
             portlst = 21,22,23,443
             for port in portlst:
                 s = socket(AF_INET, SOCK_STREAM)
                 if s.connect_ex((host,port)) == 0:
-                      print  bcolors.GREEN + "Port :",port,"[!]Open" +bcolo
-rs.ENDC
+                      print  bcolors.GREEN + "Port :",port,"[!]Open" +bcolors.ENDC
 
                 else:
-                     print bcolors.RED + "Port :",port," Closed" + bcolors.
-ENDC
+                     print bcolors.RED + "Port :",port," Closed" + bcolors.ENDC
                      s.close()
         except KeyboardInterrupt:
                 print "Ctl-C caught"
@@ -179,12 +174,10 @@ ENDC
                 s = socket(AF_INET, SOCK_STREAM)
                 #message = s.recv(1024)
                 if s.connect_ex((host,port)) == 0:
-                   print bcolors.GREEN + "Port : ",port, "Open" + bcolors.E
-NDC
+                   print bcolors.GREEN + "Port : ",port, "Open" + bcolors.ENDC
                       # print "[!]"+str(message)
                 else:
-                    print bcolors.RED + "Port : ",port, "Closed" + bcolors.
-ENDC
+                    print bcolors.RED + "Port : ",port, "Closed" + bcolors.ENDC
                     s.close()
 
 
@@ -300,8 +293,7 @@ ENDC
              time.sleep(0.3)
          ip = (lines)
          os.system("clear")
-         print bcolors.BOLD+ bcolors.UNDERL+bcolors.RED + " Now add the ip
-below   " +ip +bcolors.ENDC
+         print bcolors.BOLD+ bcolors.UNDERL+bcolors.RED + " Now add the ip below   " +ip +bcolors.ENDC
 
 
 
@@ -317,8 +309,7 @@ below   " +ip +bcolors.ENDC
             sys.stdout.write("")
 
    def finger():
-       print "This can be done with a finger command"+'\n'+"would you like
-me to run the finger commnd"+'\n'+"1 for Yes 2 for No"
+       print "This can be done with a finger command"+'\n'+"would you like me to run the finger commnd"+'\n'+"1 for Yes 2 for No"
        fi = input()
        if fi == 1:
               print "using the finger command"
@@ -342,8 +333,7 @@ me to run the finger commnd"+'\n'+"1 for Yes 2 for No"
                    pass
         except KeyboardInterrupt:
                time.sleep(0.1)
-               print '\n'+ bcolors.backRed +"going back to main"+ bcolors.E
-NDC
+               print '\n'+ bcolors.backRed +"going back to main"+ bcolors.ENDC
                pass
 
 
@@ -422,10 +412,8 @@ NDC
    time.sleep(0.1)
 
    try:
-      ff = urllib2.urlopen("http://www.iplocationfinder.com/"+f+'.'+s+'.'+t
-+'.'+fo)
-      print bcolors.BOLD+bcolors.CYAN+ "Now fetching your infomation"+bcolo
-rs.ENDC
+      ff = urllib2.urlopen("http://www.iplocationfinder.com/"+f+'.'+s+'.'+t+'.'+fo)
+      print bcolors.BOLD+bcolors.CYAN+ "Now fetching your infomation"+bcolors.ENDC
       bar()
       os.system("clear")
       s = str(ff.read())
@@ -440,51 +428,47 @@ rs.ENDC
         print e
         time.sleep(0.1)
         os.system("clear")
-        print "This is the last output information requested"+'\n'+"Since y
-ou typed an invalid IP address"
+        print "This is the last output information requested"+'\n'+"Since you typed an invalid IP address"
 
 
 
 
-
-
-
-   lip = open('location.txt').readlines()[66],
+   lip = open('location.txt').readlines()[61],
    for lines in lip:
        print bcolors.UNDERL+bcolors.GREEN + (lines)
-   trip = open('location.txt').readlines()[67],
+   trip = open('location.txt').readlines()[62],
    for lines in trip:
        print (lines)
-   rip = open('location.txt').readlines()[68],
+   rip = open('location.txt').readlines()[63],
    for lines in rip:
        print (lines)
 
-   it = open('location.txt').readlines()[69],
+   it = open('location.txt').readlines()[64],
    for lines in it:
        print (lines)
 
-   of = open('location.txt').readlines()[70],
+   of = open('location.txt').readlines()[65],
    for lines in of:
        print (lines)
-   read = open('location.txt').readlines()[71],
+   read = open('location.txt').readlines()[66],
    for lines in read:
        print (lines)
-   ancor = open('location.txt').readlines()[72],
+   ancor = open('location.txt').readlines()[67],
    for lines in ancor:
        print (lines)
-   teck = open('location.txt').readlines()[73],
+   teck = open('location.txt').readlines()[68],
    for lines in teck:
        print (lines)
-   god = open('location.txt').readlines()[74],
+   god = open('location.txt').readlines()[69],
    for lines in god:
        print (lines)
-   ip = open('location.txt').readlines()[75],
+   ip = open('location.txt').readlines()[70],
    for lines in ip:
        print (lines)
-   look = open('location.txt').readlines()[77],
+   look = open('location.txt').readlines()[71],
    for line in look:
        print (lines)
-   hack = open('location.txt').readlines()[78],
+   hack = open('location.txt').readlines()[72],
    for lines in hack:
 ##   sick = open('location.txt').readlines()[108],
 ##   for lines in sick:
@@ -517,8 +501,7 @@ ou typed an invalid IP address"
                            print "Thank you for using this program"
                            raise SystemExit
                      if i == 1:
-                           print "[Even though your winning it dosen't mean
- you've won]"
+                           print "[Even though your winning it dosen't mean you've won]"
                            raise SystemExit
          else:
               print "Thanks for not answering the question i'll exit then"
