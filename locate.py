@@ -76,12 +76,12 @@ while True:
                     locallook()
              elif ch == "n" or ch == "N":
                       os.system("clear")
-                      print bcolors.DARKCYAN + "[+]Skipping local look up " + bcolors.ENDC
+                      print bcolors.DARKCYAN + "[+]Skipping local look up "+ bcolors.ENDC
                       time.sleep(0.3)
                       pass
              elif ch == "":
                       time.sleep(0.1)
-                      print bcolors.RED + "[!]You left the question blank"+ bcolors.ENDC
+                      print bcolors.RED + "[!]You left the question blank"+bcolors.ENDC
                       os.system("clear")
                       return local()
              elif ch == "Goto portscan":
@@ -157,6 +157,43 @@ while True:
                      time.sleep(0.3)
                      print "Invalid choice"
                      return menu()
+
+
+
+
+   def update():
+          print "Would you like to update to script"
+          o = (raw_input("Y/N"))
+          if o  == "Y":
+                 print "Proceeding"
+                 print "updating the script uses gith\n\nI hope u have github setup"
+                 print "Removing old directory"
+                 os.system("rm -rf locate")
+                 print "Getting the updated script"
+                 os.system("git clone git://github.com/Tecksupport/locate")
+                 os.getcwd()
+                 print "Changing dircetories"
+                 os.chdir("/root/locate")
+                 print "making script excutable"
+                 os.system("chmod 777 locate.py")
+                 print "Moving back dirs"
+                 os.chdir("/root")
+                 print "All done"
+                 options()
+
+          else:
+             print "its Kind of dumb not to update your script but ok then\n\nwhat ever floats your boat"
+             options()
+
+
+
+
+
+
+
+
+
+
 
 
    def portrange():
@@ -343,7 +380,8 @@ while True:
          print "1 >> Outside Ip Lookup"
          print "2 >> Local IP Lookup"
          print "3 >> Port scanner"
-         print "4 >> Utilites" + bcolors.ENDC
+         print "4 >> Utilites"
+         print "5 >> Update" + bcolors.ENDC
          c = input("->>__ ")
          if c == 1:
                pass
@@ -353,6 +391,9 @@ while True:
                  menu()
          elif c == 4:
                  util()
+         elif c == 5:
+                 update()
+
          else:
            print"[!] Invalid choice"
            time.sleep(0.2)
@@ -433,42 +474,45 @@ while True:
 
 
 
-   lip = open('location.txt').readlines()[61],
+
+
+
+   lip = open('location.txt').readlines()[66],
    for lines in lip:
        print bcolors.UNDERL+bcolors.GREEN + (lines)
-   trip = open('location.txt').readlines()[62],
+   trip = open('location.txt').readlines()[67],
    for lines in trip:
        print (lines)
-   rip = open('location.txt').readlines()[63],
+   rip = open('location.txt').readlines()[68],
    for lines in rip:
        print (lines)
 
-   it = open('location.txt').readlines()[64],
+   it = open('location.txt').readlines()[69],
    for lines in it:
        print (lines)
 
-   of = open('location.txt').readlines()[65],
+   of = open('location.txt').readlines()[70],
    for lines in of:
        print (lines)
-   read = open('location.txt').readlines()[66],
+   read = open('location.txt').readlines()[71],
    for lines in read:
        print (lines)
-   ancor = open('location.txt').readlines()[67],
+   ancor = open('location.txt').readlines()[72],
    for lines in ancor:
        print (lines)
-   teck = open('location.txt').readlines()[68],
+   teck = open('location.txt').readlines()[73],
    for lines in teck:
        print (lines)
-   god = open('location.txt').readlines()[69],
+   god = open('location.txt').readlines()[74],
    for lines in god:
        print (lines)
-   ip = open('location.txt').readlines()[70],
+   ip = open('location.txt').readlines()[75],
    for lines in ip:
        print (lines)
-   look = open('location.txt').readlines()[71],
+   look = open('location.txt').readlines()[77],
    for line in look:
        print (lines)
-   hack = open('location.txt').readlines()[72],
+   hack = open('location.txt').readlines()[78],
    for lines in hack:
 ##   sick = open('location.txt').readlines()[108],
 ##   for lines in sick:
@@ -509,3 +553,5 @@ while True:
        except KeyboardInterrupt:
                print "You hit Ctl-C Exitting"
                raise SystemExit
+
+
