@@ -482,64 +482,67 @@ while True:
 
 
 
-   lip = open('location.txt').readlines()[66],
+   lip = open('location.txt').readlines()[58],
    for lines in lip:
        print bcolors.UNDERL+bcolors.GREEN + (lines)
-   trip = open('location.txt').readlines()[67],
+   trip = open('location.txt').readlines()[59],
    for lines in trip:
        print (lines)
-   rip = open('location.txt').readlines()[68],
+   rip = open('location.txt').readlines()[60],
    for lines in rip:
        print (lines)
 
-   it = open('location.txt').readlines()[69],
+   it = open('location.txt').readlines()[61],
    for lines in it:
        print (lines)
 
-   of = open('location.txt').readlines()[70],
+   of = open('location.txt').readlines()[62],
    for lines in of:
        print (lines)
-   read = open('location.txt').readlines()[71],
+   read = open('location.txt').readlines()[63],
    for lines in read:
        print (lines)
-   ancor = open('location.txt').readlines()[72],
+   ancor = open('location.txt').readlines()[64],
    for lines in ancor:
        print (lines)
-   teck = open('location.txt').readlines()[73],
+   teck = open('location.txt').readlines()[65],
    for lines in teck:
        print (lines)
-   god = open('location.txt').readlines()[74],
+   god = open('location.txt').readlines()[66],
    for lines in god:
        print (lines)
-   ip = open('location.txt').readlines()[75],
+   ip = open('location.txt').readlines()[67],
    for lines in ip:
        print (lines)
-   look = open('location.txt').readlines()[77],
+   look = open('location.txt').readlines()[68],
    for line in look:
        print (lines)
-   hack = open('location.txt').readlines()[78],
+   hack = open('location.txt').readlines()[69],
    for lines in hack:
-##   sick = open('location.txt').readlines()[108],
-##   for lines in sick:
-##       print (lines)
-##   find = open('location.txt').readlines()[109],
-##   for lines in find:
-##       print (lines)
-##   snap = open('location.txt').readlines()[110],
-##   for lines in snap:
-##       print (lines)
-##   tack = open('location.txt').readlines()[112],
-##   for lines in tack:
-##       print (lines)
-##   help = open('location.txt').readlines()[113],
-##   for lines in help:
-##       print (lines)
-##   sex = open('location.txt').readlines()[114],
-##   for lines in sex:
-##       print (lines)
-##   itia = open('location.txt').readlines()[115],
-##   for lines in itia:
-       print (lines)+ bcolors.ENDC  # Lines can be added if more is needed
+   sick = open('location.txt').readlines()[70],
+   for lines in sick:
+       print (lines)
+   find = open('location.txt').readlines()[71],
+   for lines in find:
+       print (lines)
+   snap = open('location.txt').readlines()[72],
+   for lines in snap:
+       print (lines)
+   tack = open('location.txt').readlines()[73],
+   for lines in tack:
+       print (lines)
+   help = open('location.txt').readlines()[74],
+   for lines in help:
+       print (lines)
+   sex = open('location.txt').readlines()[75],
+   for lines in sex:
+       print (lines)
+   itia = open('location.txt').readlines()[115],
+   for lines in itia:
+       print (lines)
+   HGB = open('location.txt').readlines()[77],
+   for lines in HGB:
+       print (lines)+ bcolors.ENDC  # Lines c be added if more is needed
        try:
          pause = (raw_input(wait))
          if pause == "Y" or pause == "y":
